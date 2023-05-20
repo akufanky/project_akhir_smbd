@@ -46,3 +46,10 @@ VALUES
 (1, 'Dr. Lili', 'Umum', '04731738', 'lili@dokter.com'),
 (2, 'Dr. Jaden', 'Umum', '987654321', 'jaden@dokter.com'),
 (3, 'Dr. Syaiful', 'Penyakit Dalam', '456789123', 'syaiful@dokter.com');
+
+CREATE TABLE History (
+  history_id INT AUTO_INCREMENT PRIMARY KEY,
+  nama_tabel VARCHAR(100),
+  aksi VARCHAR(100),
+  tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
